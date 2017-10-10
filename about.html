@@ -1,0 +1,231 @@
+﻿
+<html>
+<head>
+<title>HyunHwa's Page</title>
+<style>
+  body {
+	background-color: #D5D5D5;
+	font-family: Arial, "Trebuchet MS", sans-serif;
+	margin: 0px;
+	}
+
+
+  header {
+	background-color: #22741C;
+	color: white;
+	margin: 0px;
+	text-align: center;
+	padding: 5px;
+	}
+
+ section#main {
+	display: table-cell;
+	width: 70%;
+	background-color:#FAED7D;
+	padding: 15px;
+
+	}
+  nav {
+	display: table-cell;
+	width:30%;
+  	background-color: #BCE55C;
+   	padding: 10px;
+
+   	}
+  footer {
+ 	background-color: #10620A;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	margin: 0px 0px 0px 0px;
+	font-size: 90%;
+	}
+
+  #list, th, td { border: 2px solid black;
+	border-collapse: collapse;}
+  #list th { background-color: #47C83E;
+	 color: white;
+	}
+  h2 {color: #22741C}
+  h3 {color: #FFBB00;
+	font-style: italic;}
+  fieldset {border-color: black;}
+  caption {font-weight: bold;
+	color:#5F00FF;}
+
+  a:link{ color:#5F00FF; }
+  a:visited{color:#FF007F;}
+  a:hover{color: #2F9D27;
+	font-size:130%;}
+
+  #Z {float: left; width: 140px; hegiht: 140px; margin: 8px;}
+</style>
+
+<body>
+ <header>
+  <h1>Hyunhwa's Page</h1>
+ </header>
+ 
+ <nav>
+  성균관대학교
+  <a href="http://lis.skku.edu/lis/index.jsp" target="_blank"><strong>문헌정보학과</a>/SCSC</strong> 장현화<br/>
+
+  <ul>
+	<li>페이스북: facebook.com/wkdgusghk</a></li>
+	<li>인스타그램: instagram.com/hyunawww2</a></li>
+	<li> 이메일: jhh9778@naver.com</li>
+  </ul>
+
+ </nav>
+
+ <section id="main">
+  <article>
+   <h2>현재 학습하고 있는 과목</h2>
+	<ul>
+ 	  <li><b>CSE3040</b> 인간컴퓨터 상호작용</li>
+	  <li><b>ICE3035</b> 웹프로그래밍</li>
+	  <li><b>COM3006</b> 컴퓨터 네트워크</li>
+	  <li><b>LSI3032</b> 학교도서관미디어 경영센터론</li>	
+	</ul>
+  </article>
+
+  <article>
+  <table id="list">
+	  <caption>
+	   &lt;시간표&gt;
+ 	  </caption>
+	<tr>
+	  <th>&nbsp;</th> 
+	  <th>월요일</th> 
+	  <th>화요일</th> 
+	  <th>수요일</th> 
+	  <th>목요일</th>
+	  <th>금요일</th>
+	</tr>
+	<tr>
+	  <td>1교시</td>
+	  <td>&nbsp;</td>
+	  <td>&nbsp;</td>
+	  <td>&nbsp;</td>
+	  <td>&nbsp;</td>
+	  <td rowspan="2">컴퓨터<br>네트워트</td>
+	</tr>
+
+	<tr>
+	  <td>2교시</td>
+	  <td>&nbsp;</td>
+	  <td>&nbsp;</td>
+	  <td>&nbsp;</td>
+	  <td>&nbsp;</td>
+	</tr>
+
+	<tr>
+	  <td>3교시</td>
+	  <td>&nbsp;</td>
+	  <td>&nbsp;</td>
+	  <td>인간컴퓨터<br>상호작용</td>
+	  <td>&nbsp;</td>
+	  <td rowspan="2">웹프로그래밍</td>
+	</tr>
+
+	<tr>
+	  <td>4교시</td>
+	  <td>인간 컴퓨터<br>상호작용</td>
+	  <td>&nbsp;</td>
+	  <td>&nbsp;</td>
+	  <td>&nbsp;</td>	  
+	</tr>
+
+	<tr>
+	  <td>5교시</td>
+	  <td>&nbsp;</td>
+	  <td>&nbsp;</td>
+	  <td>&nbsp;</td>
+	  <td>&nbsp;</td>
+	  <td>&nbsp;</td>
+	</tr>
+
+	<tr>
+	  <td>6교시</td>
+	  <td>&nbsp;</td>
+	  <td>&nbsp;</td>
+	  <td>&nbsp;</td>
+	  <td>&nbsp;</td>
+	  <td>&nbsp;</td>
+	</tr>
+
+	<tr>
+	  <td>7교시</td>
+	  <td>&nbsp;</td>
+	  <td>&nbsp;</td>
+	  <td rowspan="2">학교도서관미디어<br> 경영센터론</td>
+	  <td>&nbsp;</td>
+	  <td>&nbsp;</td>
+	</tr>
+
+	<tr>
+	  <td>8교시</td>
+	  <td>&nbsp;</td>
+	  <td>&nbsp;</td>
+	  <td>&nbsp;</td>
+	  <td>&nbsp;</td>
+	
+	</tr>
+	</table> 
+  </article>
+
+  <article>
+   <h2>이전시간표</h2>
+   <form action="result.jsp" method=post">
+	 <fieldset> <legend>과목입력</legend>
+	  학기선택: <select name="semester">
+		<option value="select" selected>학기를 선택하세요</option>
+		<option value="1-1">1학년 1학기</option>
+		<option value="1-2">1학년 2학기</option>
+		<option value="2-1">2학년 1학기</option>
+		<option value="2-2">2학년 2학기</option>
+		<option value="3-1">3학년 1학기</option>
+		<option value="3-2">3학년 2학기</option>
+		<option value="add">계절학기</option>
+		</select><br/>
+	  과목명:&nbsp;&nbsp;&nbsp; <input type="text" name="cname"><br/>
+	  과목코드: <input type="text" name="ccode"><br/>
+	  종류:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="type" value="major">전공
+	          <input type="radio" name="type" value="classic">교양</br>
+	  시간:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="time" name="time">~<input type="time" name="time"><br/>
+	  강의실:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="croom"><br/>
+	  교수님 성함:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="pname"><br/>
+	  교수님 이메일: <input type="text" name="email"><br/><br/>
+	  강의평<br/> <textarea name="feedback" rows="5" cols="70"></textarea><br/><br/>
+	  <input type="submit" value="입력하기">
+	  <input type="reset" value="다시쓰기">	
+	  </fieldset>
+	  </form>
+  
+  </article>
+
+  <article>
+    <h2>좋아하는 것</h2>
+     <h3>좋아하는 음악</h3>
+     <audio src="Know.mp3" controls>씨잼-Know</audio></br>
+     <audio src="DailyLook.mp3" controls>해쉬스완-Daily Look</audio></br>
+    
+     <video width="480" height="360" src="씨잼.mp4" controls></video></br>
+
+     <h3>좋아하는 캐릭터</h3>
+     <img id="Z" src="짱구1.jpg" width="100" height="100">
+     <img id="Z" src="짱구2.jpg" width="100" height="100">
+     <img id="Z" src="짱구3.jpg" width="100" height="100">
+     <img id="Z" src="짱구4.jpg" width="100" height="100">
+
+
+
+     
+  </article>
+
+ </section>
+
+
+ <footer>Copyright (c) 2017 JANG</footer>
+</body>
+</html>
